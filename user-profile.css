@@ -1,0 +1,103 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2C6336;
+}
+
+.container {
+    margin-top: 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 90%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+
+/* For smaller screens (mobile devices) */
+@media (max-width: 600px) {
+    .container {
+        width: 90%; /* Adjust container width for mobile */
+        margin-top: 20px;
+    }
+
+    h2.title {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], button {
+        width: 100%; /* Make input fields and button full-width on small screens */
+    }
+
+    .form-group {
+        margin-bottom: 10px; /* Reduce margin on smaller screens */
+    }
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 768px) {
+    .container {
+        width: 70%; /* Adjust container width for tablets */
+        margin-top: 30px;
+    }
+
+    h2.title {
+        font-size: 20px; /* Adjust heading size */
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], button {
+        width: 90%; /* Make input fields and button full-width on medium screens */
+    }
+}
+
+/* For larger screens (desktop) */
+@media (min-width: 1200px) {
+    .container {
+        width: 40%; /* Adjust container width for larger screens */
+    }
+
+    h2.title {
+        font-size: 32px; /* Adjust heading size for larger screens */
+    }
+}

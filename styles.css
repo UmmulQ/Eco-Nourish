@@ -1,0 +1,198 @@
+/* Hero Section */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center; /* Ensures text is centered */
+    background: url('Bg/bg.png') no-repeat center center/cover;
+}
+.category-box:hover {
+    background-color: #222;
+    color: #fff;
+}
+.category-box a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+
+.hero-content {
+    width: 100%;
+    height: 100%; /* Fill the full height of the hero section */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers the content vertically */
+    align-items: center; /* Centers the content horizontally */
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
+    text-align: center; /* Center the text */
+}
+
+.hero-content h2 {
+    font-size: 70px;
+    margin: 0;
+    color: #f0c040;
+}
+
+.hero-content h1 {
+    font-size: 24px;
+    margin-top: 10px; /* Reduced margin */
+    font-weight: lighter; /* Slightly lighter to create hierarchy */
+}
+
+/* About Section */
+.about {
+    padding: 50px;
+    text-align: center;
+    background: white;
+}
+
+.about h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 20px;
+    color: #666;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Category Boxes */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    background: #fff;
+}
+
+.category-box {
+    background: #2C6336;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.category-box i {
+    font-size: 50px; /* Increased from 40px to 50px */
+    margin-bottom: 15px;
+}
+
+.category-box h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.category-box:hover {
+    transform: scale(1.1);
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+    .hero-content h2 {
+        font-size: 40px; /* Adjust heading size for smaller screens */
+    }
+    .hero-content h1 {
+        font-size: 20px; /* Adjust heading size for smaller screens */
+    }
+    .about {
+        padding: 30px;
+    }
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Footer Styles */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    padding: 20px 0;
+    border-bottom: 2px solid #2C6336;
+}
+
+.footer-social {
+    margin-bottom: 15px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #f0c040;
+}
+.footer-nav{
+    background-color: #222;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto; /* Center the ul */
+    display: flex;
+    justify-content: center; /* Center the items inside */
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+    color: #f0c040;
+}
+
+.footer-bottom {
+    background-color: #2C6336;
+    padding: 15px 0;
+    color: white;
+    font-size: 14px;
+}
+
+.footer-bottom span {
+    color: #f0c040;
+    font-size: 16px;
+    font-weight: bold;
+}
